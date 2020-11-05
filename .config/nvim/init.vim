@@ -27,6 +27,10 @@ endif
 if (has("termguicolors"))
   set termguicolors
 endif
+
 let g:ycm_global_ycm_extra_conf = '/home/will/.config/nvim/plugged/youcompleteme/.ycm_extra_conf.py'
 let g:palenight_terminal_italics=1
+
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
