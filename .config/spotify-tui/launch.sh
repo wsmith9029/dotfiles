@@ -1,4 +1,3 @@
-killall spotifyd
 #!/usr/bin/sh
 
 
