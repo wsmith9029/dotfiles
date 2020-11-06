@@ -50,6 +50,7 @@ pavucontrol
 picom-tryone-git
 pkgconf
 polybar
+poppler
 powerline-fonts
 pulseaudio
 pulseaudio-alsa

@@ -10,7 +10,7 @@
 #fi
 
 alias ls='ls --color=auto'
-alias vifm='vifm ~/'
+alias fm='vifm ~/'
 
 # git alias
 alias backup='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'

@@ -1,4 +1,4 @@
 #!/usr/bin/bash
 
 
-sudo pacman -Qqe > pkglist.txt
+sudo pacman -Qqe > .pkglist.txt
