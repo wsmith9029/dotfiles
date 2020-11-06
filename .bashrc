@@ -11,9 +11,15 @@
 
 alias ls='ls --color=auto'
 alias vifm='vifm ~/'
-alias at='alacritty-themes'
+
+# git alias
 alias backup='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 alias pacup='sh .getpkglist'
-alias spot='sh ~/.config/spotify-tui/launch.sh'
-alias bs='backup status'
+alias status='backup status'
+alias addmod='backup add -u'
+alias commit='backup commit -m '
+alias push='backup push'
+
+
+alias spt='sh ~/.config/spotify-tui/launch.sh'
 PS1='[\u@\h \W]\$ '
