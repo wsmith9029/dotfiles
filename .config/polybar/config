@@ -387,7 +387,7 @@ label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
+ramp-0 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
