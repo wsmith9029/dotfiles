@@ -59,7 +59,7 @@ font-2 = siji:pixelsize=10;1
 font-3 = JetBrainsMono Nerd Font Mono:pixelsize=18;2
 
 
-modules-left = bspwm i3
+modules-left = i3
 modules-center = xwindow
 modules-right = xbacklight pulseaudio filesystem memory cpu temperature battery date powermenu
 
@@ -175,13 +175,15 @@ label-urgent-padding = 2
 
 [module/mpd]
 type = internal/mpd
+host = 127.0.0.1
+port = 6600
 format-online = <label-song>  <icon-prev> <icon-stop> <toggle> <icon-next>
 
-icon-prev = 
-icon-stop = 
-icon-play = 
-icon-pause = 
-icon-next = 
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
 
 label-song-maxlen = 25
 label-song-ellipsis = true
