@@ -42,6 +42,7 @@ make
 microsoft-edge-dev
 mpd
 nano
+ncdu
 neofetch
 neovim
 network-manager-applet
