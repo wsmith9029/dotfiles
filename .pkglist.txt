@@ -2,6 +2,7 @@ alacritty
 alsa-utils
 autoconf
 automake
+babashka-bin
 base
 binutils
 bison
@@ -79,8 +80,6 @@ vim
 vlc
 vulkan-intel
 which
-wine
-wine-mono
 xclip
 xdg-utils
 xf86-input-synaptics
