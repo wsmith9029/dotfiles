@@ -83,6 +83,8 @@ vlc
 vulkan-intel
 which
 wine
+wine-gecko
+wine-mono
 xclip
 xdg-utils
 xf86-input-synaptics
