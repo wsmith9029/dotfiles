@@ -10,6 +10,7 @@ cava
 cozette-ttf
 discord
 dmenu
+dunst
 efibootmgr
 fakeroot
 feh
@@ -17,6 +18,7 @@ flameshot
 flex
 gcc
 git
+gnome-icon-theme
 gotop-bin
 gparted
 grub
