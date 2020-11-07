@@ -5,6 +5,8 @@ automake
 base
 binutils
 bison
+brave-bin
+cava
 cozette-ttf
 discord
 dmenu
