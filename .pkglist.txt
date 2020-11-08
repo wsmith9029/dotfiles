@@ -16,7 +16,6 @@ dunst
 efibootmgr
 fakeroot
 feh
-firefox
 flameshot
 flex
 gcc
