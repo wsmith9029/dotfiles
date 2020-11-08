@@ -87,6 +87,7 @@ which
 wine
 wine-gecko
 wine-mono
+wireshark-git
 xclip
 xdg-utils
 xf86-input-synaptics
