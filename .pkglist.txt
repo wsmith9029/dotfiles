@@ -16,6 +16,7 @@ dunst
 efibootmgr
 fakeroot
 feh
+firefox
 flameshot
 flex
 gcc
@@ -49,6 +50,8 @@ neovim
 network-manager-applet
 networkmanager
 nitrogen
+noto-fonts-cjk
+noto-fonts-emoji
 npm
 openrazer-meta
 os-prober
