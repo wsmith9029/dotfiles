@@ -21,5 +21,5 @@ alias commit='backup commit --allow-empty-message -m '
 alias push='backup push'
 
 
-alias spt='sh ~/.config/spotify-tui/launch.sh'
+alias sptd='sh ~/.config/spotify-tui/launch.sh'
 PS1='[\u@\h \W]\$ '
