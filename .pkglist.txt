@@ -7,6 +7,9 @@ base
 binutils
 bison
 bleachbit
+blueman
+bluez
+bluez-utils
 brave-bin
 cava
 cozette-ttf
