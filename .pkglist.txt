@@ -4,6 +4,7 @@ autoconf
 automake
 babashka-bin
 base
+betterlockscreen-git
 binutils
 bison
 bleachbit
@@ -31,7 +32,7 @@ gucharmap
 htop
 i3-gaps
 i3blocks
-i3lock
+i3lock-color
 i3status
 jre-openjdk
 kitty
