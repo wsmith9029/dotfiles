@@ -51,7 +51,5 @@ fi
 setxkbmap gb # Keymap
 nitrogen --restore &
 dunst &
-#~/.fehbg & #Wallpaper Manager
-#exec spotifyd --config-path ~/.config/spotifyd/spotifyd.conf  & # Spotify Daemon
-picom --experimental-backends --config .config/picom/picom.conf -b
+
 exec i3 # Window Manager
