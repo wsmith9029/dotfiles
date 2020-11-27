@@ -11,6 +11,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'valloric/youcompleteme'
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'haishanh/night-owl.vim'
 Plug 'ap/vim-css-color'
 call plug#end()
 

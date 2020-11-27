@@ -44,6 +44,7 @@ bindsym XF86AudioMute exec --no-startup-id pulseaudio-ctl mute
 
 bindsym XF86AudioMicMute exec --no-startup-id pulseaudio-ctl mute-input
 
+bindsym F9 exec --no-startup-id "betterlockscreen -l dim"
 #bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -192,5 +193,5 @@ exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always --no-startup-id picom --experimental-backends --config $HOME/.config/picom/picom.conf -b
 
 for_window [class="^.*"] border pixel 2
-gaps inner 30
-gaps outer 15
+gaps inner 15
+gaps outer 10
