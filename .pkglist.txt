@@ -72,7 +72,6 @@ pulseaudio-ctl
 python-pip
 qbittorrent
 siji-git
-snake
 social-engineer-toolkit-git
 spotify
 spotify-tui-bin
