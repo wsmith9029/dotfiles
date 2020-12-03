@@ -45,6 +45,7 @@ lutris
 m4
 make
 microsoft-edge-dev
+minecraft-launcher-beta
 mpd
 nano
 ncdu
@@ -68,6 +69,7 @@ poppler
 powerline-fonts
 pulseaudio
 pulseaudio-alsa
+pulseaudio-bluetooth
 pulseaudio-ctl
 python-pip
 qbittorrent
@@ -77,6 +79,7 @@ spotify
 spotify-tui-bin
 spotifyd
 sudo
+sxiv
 teams
 texinfo
 tor

@@ -21,6 +21,6 @@ alias commit='backup commit --allow-empty-message -m '
 alias push='backup push'
 alias lock='betterlockscreen -l dim'
 alias themes='alacritty-themes'
-
 alias sptd='sh ~/.config/spotify-tui/launch.sh'
+
 PS1='[\u@\h \W]\$ '
