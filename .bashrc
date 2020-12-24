@@ -22,5 +22,5 @@ alias push='backup push'
 alias lock='betterlockscreen -l dim'
 alias themes='alacritty-themes'
 alias sptd='sh ~/.config/spotify-tui/launch.sh'
-
+alias open='xdg-open '
 PS1='[\u@\h \W]\$ '
