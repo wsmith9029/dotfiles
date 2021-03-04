@@ -25,6 +25,7 @@ flex
 gcc
 git
 gnome-icon-theme
+google-cloud-sdk
 gotop-bin
 gparted
 grub
@@ -113,7 +114,6 @@ xorg-server-devel
 xorg-server-xephyr
 xorg-server-xnest
 xorg-server-xvfb
-xorg-server-xwayland
 xorg-sessreg
 xorg-smproxy
 xorg-x11perf
@@ -143,6 +143,7 @@ xorg-xrefresh
 xorg-xset
 xorg-xsetroot
 xorg-xvinfo
+xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
