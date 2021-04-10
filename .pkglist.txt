@@ -79,7 +79,6 @@ siji-git
 social-engineer-toolkit-git
 spotify
 spotify-tui-bin
-spotifyd
 sudo
 sxiv
 teams
