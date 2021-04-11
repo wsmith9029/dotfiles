@@ -17,9 +17,10 @@
 ;==========================================================
 
 [colors]
+; HEX color format - #AARRGGBB
 ;background = ${xrdb:color0:#222}
-background = #222222
-background-alt = #444444
+background = #E5222222
+background-alt = #E5444444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 ;foreground-alt = #555
