@@ -3,6 +3,7 @@ set nocompatible
 call plug#begin()
 
 Plug 'sheerun/vim-polyglot'
+Plug 'glench/vim-jinja2-syntax'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
@@ -28,6 +29,10 @@ endif
 " < https://github.com/neovim/neovim/wiki/Following-HEAD#20160511 >
 if (has("termguicolors"))
   set termguicolors
+endif
+
+if (has("syntax"))
+  syntax on
 endif
 
 let g:ycm_global_ycm_extra_conf = '/home/will/.config/nvim/plugged/youcompleteme/.ycm_extra_conf.py'
