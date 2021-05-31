@@ -86,6 +86,7 @@ texinfo
 tor
 ttf-hack
 ttf-jetbrains-mono
+tty-clock
 unrar
 unzip
 vifm

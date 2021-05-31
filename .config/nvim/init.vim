@@ -1,5 +1,18 @@
+set tabstop=4 softtabstop=4
+set shiftwidth=4
+set expandtab
+set smartindent
+
+set number
 set relativenumber
+
+set mouse=a
+set scrolloff=4
+
+set nohlsearch
+
 set nocompatible
+
 call plug#begin()
 
 Plug 'sheerun/vim-polyglot'
@@ -41,3 +54,4 @@ let g:palenight_terminal_italics=1
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+autocmd BufWritePre * %s/\s\+$//e
