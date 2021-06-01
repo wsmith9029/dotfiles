@@ -1,13 +1,15 @@
+source $HOME/.config/nvim/plug-config/coc.vim
+
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
 set smartindent
-
 set number
 set relativenumber
+set ruler
 
 set mouse=a
-set scrolloff=4
+set scrolloff=2
 
 set nohlsearch
 
@@ -16,13 +18,12 @@ set nocompatible
 call plug#begin()
 
 Plug 'sheerun/vim-polyglot'
-Plug 'glench/vim-jinja2-syntax'
 Plug 'drewtempelmeyer/palenight.vim'
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/indentLine'
-Plug 'valloric/youcompleteme'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'haishanh/night-owl.vim'
@@ -48,10 +49,12 @@ if (has("syntax"))
   syntax on
 endif
 
-let g:ycm_global_ycm_extra_conf = '/home/will/.config/nvim/plugged/youcompleteme/.ycm_extra_conf.py'
 let g:palenight_terminal_italics=1
+let g:airline_powerline_fonts = 1
+let g:coc_global_extensions = ['coc-clangd', 'coc-css', 'coc-git', 'coc-html', 'coc-htmldjango', 'coc-java', 'coc-json', 'coc-omnisharp', 'coc-pyright', 'coc-sh', 'coc-snippets', 'coc-sql', 'coc-tsserver', 'coc-xml', 'coc-yaml']
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 autocmd BufWritePre * %s/\s\+$//e
+" Removes Whitespace from eol
