@@ -62,7 +62,6 @@ noto-fonts-emoji
 npm
 openrazer-meta
 os-prober
-packettracer
 patch
 pavucontrol
 picom-tryone-git
