@@ -61,7 +61,7 @@ font-3 = siji:pixelsize=10;1
 font-2 = JetBrainsMono Nerd Font Mono:pixelsize=18;2
 
 
-modules-left = i3
+modules-left = i3 mpd
 modules-center = spotify spotify-prev spotify-play-pause spotify-next
 modules-right = xbacklight pulseaudio filesystem memory cpu temperature battery date powermenu
 
@@ -430,12 +430,14 @@ tail = true
 ; prefix symbol is shown before the text
 format-prefix = " "
 format = <label>
+format-underline = #55aa55
 exec = ~/.config/polybar/custom_scripts/scroll_spotify_status.sh
 
 [module/spotify-prev]
 type = custom/script
 exec = echo ""
 format = <label>
+format-underline = #55aa55
 click-left = playerctl previous spotify
 
 [module/spotify-play-pause]
@@ -443,12 +445,14 @@ type = custom/ipc
 hook-0 = echo ""
 hook-1 = echo ""
 initial = 1
+format-underline = #55aa55
 click-left = playerctl play-pause spotify
 
 [module/spotify-next]
 type = custom/script
 exec = echo ""
 format = <label>
+format-underline = #55aa55
 click-left = playerctl next spotify
 
 
