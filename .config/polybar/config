@@ -61,7 +61,7 @@ font-3 = siji:pixelsize=10;1
 font-2 = JetBrainsMono Nerd Font Mono:pixelsize=18;2
 
 
-modules-left = i3 mpd
+modules-left = i3
 modules-center = spotify spotify-prev spotify-play-pause spotify-next
 modules-right = xbacklight pulseaudio filesystem memory cpu temperature battery date powermenu
 
