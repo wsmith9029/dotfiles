@@ -66,6 +66,7 @@ patch
 pavucontrol
 picom-tryone-git
 pkgconf
+playerctl
 polybar
 poppler
 powerline-fonts
@@ -149,3 +150,4 @@ xorg-xwininfo
 xorg-xwud
 yay-git
 zip
+zscroll-git
