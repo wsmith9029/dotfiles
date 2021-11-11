@@ -75,6 +75,7 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 pulseaudio-ctl
 python-pip
+pywal-git
 qbittorrent
 siji-git
 spotify
