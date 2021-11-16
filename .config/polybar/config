@@ -428,7 +428,7 @@ menu-2-1-exec = menu-open-0
 type = custom/script
 tail = true
 ; prefix symbol is shown before the text
-format-prefix = " "
+;format-prefix = " "
 format = <label>
 format-underline = #55aa55
 exec = ~/.config/polybar/custom_scripts/scroll_spotify_status.sh
