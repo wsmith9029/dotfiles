@@ -70,6 +70,7 @@ playerctl
 polybar
 poppler
 powerline-fonts
+projectlibre
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -88,6 +89,7 @@ tor
 ttf-hack
 ttf-jetbrains-mono
 tty-clock
+udisks2
 unrar
 unzip
 vifm
