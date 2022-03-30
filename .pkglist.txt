@@ -50,6 +50,7 @@ make
 microsoft-edge-dev
 minecraft-launcher-beta
 mpd
+mtools
 nano
 ncdu
 neofetch
@@ -60,6 +61,7 @@ nitrogen
 noto-fonts-cjk
 noto-fonts-emoji
 npm
+octave
 openrazer-meta
 os-prober
 patch
