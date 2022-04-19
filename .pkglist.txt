@@ -47,8 +47,6 @@ linux-firmware
 lutris
 m4
 make
-microsoft-edge-dev
-minecraft-launcher-beta
 mpd
 mtools
 nano
