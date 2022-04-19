@@ -34,7 +34,6 @@ gucharmap
 htop
 i3-gaps
 i3blocks
-i3lock-color-git
 i3status
 jre-openjdk
 jupyterlab
