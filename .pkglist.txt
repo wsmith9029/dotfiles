@@ -6,6 +6,7 @@ babashka-bin
 base
 binutils
 bison
+bitwarden
 bleachbit
 blueman
 bluez
