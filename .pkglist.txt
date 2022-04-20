@@ -12,6 +12,7 @@ blueman
 bluez
 bluez-utils
 brave-bin
+calc
 cava
 clang
 cozette-ttf
@@ -55,6 +56,7 @@ neofetch
 neovim
 network-manager-applet
 networkmanager
+networkmanager-dmenu-git
 nitrogen
 noto-fonts-cjk
 noto-fonts-emoji
@@ -76,9 +78,11 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 pulseaudio-ctl
 python-pip
-pywal-git
+pywal-16-colors
 qbittorrent
+rofi
 siji-git
+spicetify-cli
 spotify
 spotify-tui-bin
 sudo
