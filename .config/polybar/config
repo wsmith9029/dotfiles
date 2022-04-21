@@ -54,7 +54,7 @@ separator = |
 separator-foreground = ${colors.disabled}
 
 font-0 = monospace;2
-font-1 = Font Awesome 6 Free:style=solid:size=12;1
+font-1 = Font Awesome 6 Free:style=solid:size=12;2
 font-2 = JetBrainMono Nerd Font;2
 
 modules-left = i3 xwindow

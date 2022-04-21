@@ -4,6 +4,7 @@ autoconf
 automake
 babashka-bin
 base
+betterlockscreen
 binutils
 bison
 bitwarden
