@@ -190,9 +190,11 @@ bindsym $mod+r mode "resize"
 #bar {
 #        status_command i3status
 #}
-exec_always --no-startup-id $HOME/.config/polybar/custom_scripts/launch.sh
+exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
 exec_always --no-startup-id picom --experimental-backends --config $HOME/.config/picom/picom.conf -b
 
-#for_window [class="^.*"] border pixel 2
+for_window [class="^.*"] border pixel 2
 gaps inner 15
 gaps outer 10
+# gaps top 50
+gaps bottom 30
