@@ -29,7 +29,7 @@ disabled = #707880
 [bar/example]
 width = 94%
 height = 24pt
-radius = 4
+radius = 2
 offset-x = 3%
 offset-y = 0.5%
 fixed-center = true
@@ -42,8 +42,8 @@ foreground = ${colors.foreground}
 
 line-size = 3pt
 
-border-size = 3
-border-color = #b19cd9
+border-size = 2
+border-color = #7896b7
 
 padding-left = 0
 padding-right = 1
