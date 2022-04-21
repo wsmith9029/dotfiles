@@ -88,10 +88,16 @@ spotify-tui-bin
 sudo
 sxiv
 teams
+terminus-font
 texinfo
 tor
+ttf-droid
+ttf-fantasque-sans-mono
 ttf-hack
+ttf-icomoon-feather
+ttf-iosevka-nerd
 ttf-jetbrains-mono
+ttf-material-design-icons
 tty-clock
 udisks2
 unrar
