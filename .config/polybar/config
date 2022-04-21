@@ -58,7 +58,7 @@ font-1 = Font Awesome 6 Free:style=solid:size=12;1
 font-2 = JetBrainMono Nerd Font;2
 
 modules-left = xworkspaces xwindow
-modules-right = filesystem pulseaudio memory cpu battery update-mgr date
+modules-right = pulseaudio xbacklight filesystem memory cpu battery update-mgr date
 #xkeyboard
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -189,25 +189,13 @@ format-discharging =<label-discharging>
 ;format-discharging-underline = ${self.format-charging-underline}
 
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
+[module/xbacklight]
+type = internal/xbacklight
+format = <label>
+format-prefix = "BRT "
+format-prefix-foreground = ${colors.primary}
+label = %percentage%%
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-foreground = ${colors.foreground-alt}
-animation-charging-framerate = 750
-
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
-animation-discharging-3 = 
-animation-discharging-foreground = ${colors.foreground-alt}
-animation-discharging-framerate = 750
 
 [module/update-mgr]
 type = custom/script

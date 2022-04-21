@@ -64,6 +64,7 @@ npm
 octave
 openrazer-meta
 os-prober
+pacman-contrib
 patch
 pavucontrol
 picom-tryone-git
@@ -93,6 +94,7 @@ texinfo
 tor
 ttf-droid
 ttf-fantasque-sans-mono
+ttf-font-awesome
 ttf-hack
 ttf-icomoon-feather
 ttf-iosevka-nerd
@@ -102,6 +104,7 @@ tty-clock
 udisks2
 unrar
 unzip
+upower
 vifm
 vim
 vlc
