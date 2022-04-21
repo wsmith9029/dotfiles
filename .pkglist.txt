@@ -12,6 +12,7 @@ blueman
 bluez
 bluez-utils
 brave-bin
+brightnessctl
 calc
 cava
 clang
