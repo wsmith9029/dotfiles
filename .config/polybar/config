@@ -41,7 +41,7 @@ yellow = #f1fa8c
 [bar/example]
 width = 96%
 height = 26pt
-radius = 2
+radius = 0
 offset-x = 2%
 offset-y = 0.5%
 fixed-center = true

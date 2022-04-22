@@ -70,7 +70,7 @@ os-prober
 pacman-contrib
 patch
 pavucontrol
-picom-tryone-git
+picom-ibhagwan-git
 pkgconf
 playerctl
 polybar
