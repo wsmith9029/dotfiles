@@ -18,6 +18,9 @@ window:
   class:
     instance: Alacritty
     general: Alacritty
+  padding:
+    x: 10
+    y: 5
 
 # Colors
 colors:
