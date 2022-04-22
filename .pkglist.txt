@@ -24,6 +24,7 @@ dunst
 efibootmgr
 fakeroot
 feh
+fish
 flameshot
 flex
 gcc
