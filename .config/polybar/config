@@ -26,6 +26,18 @@ secondary = #8ABEB7
 alert = #A54242
 disabled = #707880
 
+
+darkpurple = #44475a
+otherpurple = #6272a4
+cyan = #8be9fd
+green = #50fa7b
+orange = #ffb86c
+pink = #ff79c6
+purple = #bd93f9
+red = #ff5555
+yellow = #f1fa8c
+
+
 [bar/example]
 width = 94%
 height = 24pt
@@ -43,7 +55,7 @@ foreground = ${colors.foreground}
 line-size = 3pt
 
 border-size = 2
-border-color = #006994
+border-color = ${colors.purple}
 
 padding-left = 0
 padding-right = 1
@@ -51,10 +63,10 @@ padding-right = 1
 module-margin = 1
 
 separator = |
-separator-foreground = ${colors.disabled}
+separator-foreground = ${colors.green}
 
-font-0 = monospace;2
-font-1 = Font Awesome 6 Free:style=solid:size=12;2
+font-0 = monospace:size=12;2
+font-1 = Font Awesome 6 Free:style=solid:pixelsize=14;3
 font-2 = JetBrainMono Nerd Font;2
 
 modules-left = i3 xwindow
@@ -63,7 +75,7 @@ modules-right = pulseaudio xbacklight filesystem memory cpu battery update-mgr d
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-enable-ipc = true
+enable-ipc = false
 
 tray-position = right
 
@@ -207,11 +219,13 @@ label-connected = %{F#F0C674}%ifname%%{F-} %local_ip%
 type = internal/date
 interval = 1
 
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
 date = %H:%M
 date-alt = %d-%m-%Y %H:%M:%S
 
 label = %date%
-label-foreground = ${colors.primary}
+label-foreground = ${colors.foreground}
 
 
 [module/battery]
@@ -242,8 +256,8 @@ label = %percentage%%
 [module/update-mgr]
 type = custom/script
 exec = ~/.config/polybar/scripts/update-mgr.sh
-format-prefix = %{T2} %{T-}
-format-prefix-foreground = #90ee90
+format-prefix = " "
+format-prefix-foreground = ${colors.green}
 interval = 600
 
 [settings]

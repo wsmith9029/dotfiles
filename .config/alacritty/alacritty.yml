@@ -1,17 +1,15 @@
 font:
   normal:
-    family: JetBrainsMono Nerd Font Mono
+    # family: JetBrainsMono Nerd Font Mono
+    family: Iosevka Nerd Font Mono
     style: Regular
   bold:
-    family: JetBrainsMono Nerd Font Mono
     style: Bold
   italic:
-    family: JetBrainsMono Nerd Font Mono
     style: Italic
   bold_italic:
-    family: JetBrainsMono Nerd Font Mono
     style: Bold Italic
-  size: 10
+  size: 9
 
 env:
   TERM: alacritty
@@ -23,32 +21,37 @@ window:
 
 # Colors
 colors:
-  name: Paraiso (dark)
-  author: Chris Kempson
-  primary:
-    background: "#2f1e2e"
-    foreground: "#a39e9b"
   cursor:
-    text: "#2f1e2e"
-    cursor: "#a39e9b"
+    text: '#fefff2'
+    cursor: '#f0cc09'
+
+  selection:
+    text: '#b5b5b5'
+    background: '#18354f'
+
+  primary:
+    background: '#132738'
+    foreground: '#ffffff'
+
   normal:
-    black: "#2f1e2e"
-    red: "#ef6155"
-    green: "#48b685"
-    yellow: "#fec418"
-    blue: "#06b6ef"
-    magenta: "#815ba4"
-    cyan: "#5bc4bf"
-    white: "#a39e9b"
+    black: '#000000'
+    red: '#ff0000'
+    green: '#38de21'
+    yellow: '#ffe50a'
+    blue: '#1460d2'
+    magenta: '#ff005d'
+    cyan: '#00bbbb'
+    white: '#bbbbbb'
+
   bright:
-    black: "#776e71"
-    red: "#ef6155"
-    green: "#48b685"
-    yellow: "#fec418"
-    blue: "#06b6ef"
-    magenta: "#815ba4"
-    cyan: "#5bc4bf"
-    white: "#e7e9db"
+    black: '#555555'
+    red: '#f40e17'
+    green: '#3bd01d'
+    yellow: '#edc809'
+    blue: '#5555ff'
+    magenta: '#ff55ff'
+    cyan: '#6ae3fa'
+    white: '#ffffff'
 
 cursor:
   style: Underline

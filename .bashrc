@@ -25,3 +25,5 @@ alias sptd='sh ~/.config/spotify-tui/launch.sh'
 alias open='xdg-open '
 alias cls='clear'
 PS1='[\u@\h \W]\$ '
+
+neofetch
