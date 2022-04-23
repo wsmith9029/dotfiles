@@ -55,7 +55,6 @@ mpd
 mtools
 nano
 ncdu
-neofetch
 neovim
 network-manager-applet
 networkmanager
@@ -70,6 +69,7 @@ os-prober
 pacman-contrib
 patch
 pavucontrol
+pfetch
 picom-ibhagwan-git
 pkgconf
 playerctl

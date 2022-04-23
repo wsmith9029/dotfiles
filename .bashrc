@@ -2,6 +2,11 @@
 # ~/.bashrc
 #
 
+# ENV VARIABLES HERE
+
+
+
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
@@ -23,6 +28,7 @@ alias lock='betterlockscreen -l dim'
 alias sptd='sh ~/.config/spotify-tui/launch.sh'
 alias open='xdg-open '
 alias cls='clear'
-PS1='\u@\h \W\ > '
-
+PS1='\u@ \W\ > '
 # exec fish
+
+pfetch
