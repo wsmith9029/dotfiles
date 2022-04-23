@@ -67,6 +67,7 @@ octave
 openrazer-meta
 os-prober
 pacman-contrib
+papirus-icon-theme
 patch
 pavucontrol
 pfetch

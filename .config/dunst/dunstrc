@@ -1,6 +1,12 @@
 [global]
     font = Iosevka Nerd Font 11
 
+    # Click Events
+
+    mouse_left_click = do_action
+    mouse_right_click = close_current
+    mouse_middle_click = close_all
+
     # Allow a small subset of html markup:
     # <b>bold</b>
     # <i>italic</i>
@@ -166,3 +172,5 @@
     background = "#0B0F10"
     foreground = "#c5c8c9"
     timeout = 10
+
+# vim: ft=cfg
