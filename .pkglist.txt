@@ -29,6 +29,7 @@ flex
 gcc
 git
 gnome-icon-theme
+gotop
 gparted
 grub
 gucharmap
