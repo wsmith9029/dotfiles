@@ -18,7 +18,6 @@ calc
 cava
 clang
 cozette-ttf
-discord_arch_electron
 dmenu
 dunst
 efibootmgr
@@ -30,8 +29,6 @@ flex
 gcc
 git
 gnome-icon-theme
-google-cloud-sdk
-gotop-bin
 gparted
 grub
 gucharmap
@@ -83,7 +80,6 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 pulseaudio-ctl
 python-pip
-pywal-16-colors
 qbittorrent
 rofi
 siji-git
