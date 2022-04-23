@@ -27,7 +27,7 @@ alias push='backup push'
 alias lock='betterlockscreen -l dim'
 alias sptd='sh ~/.config/spotify-tui/launch.sh'
 alias open='xdg-open '
-alias cls='clear'
+alias cl='clear'
 PS1='\u@ \W\ > '
 # exec fish
 
