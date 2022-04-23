@@ -18,6 +18,7 @@ calc
 cava
 clang
 cozette-ttf
+discord_arch_electron
 dmenu
 dunst
 efibootmgr
