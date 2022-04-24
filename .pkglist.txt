@@ -88,6 +88,7 @@ siji-git
 spicetify-cli
 spotify
 spotify-tui-bin
+spotifyd
 sudo
 sxiv
 teams

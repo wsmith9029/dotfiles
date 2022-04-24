@@ -63,14 +63,17 @@ padding-right = 1
 
 module-margin = 1
 
-separator = |
+# separator = |
 separator-foreground = ${colors.green}
 
 font-0 = monospace:size=12;2
 font-1 = Font Awesome 6 Free:style=solid:pixelsize=14;3
-font-2 = JetBrainMono Nerd Font;2
+font-2 = Font Awesome 6 Brands:style=solid:pixelsize=14;3
+font-3 = JetBrainMono Nerd Font;2
 
-modules-left = i3 xwindow
+modules-left = i3
+#xwindow
+modules-center = spotify spotify-prev spotify-play-pause spotify-next
 modules-right = pulseaudio filesystem memory cpu battery update-mgr wlan date
 #xkeyboard
 cursor-click = pointer
@@ -210,17 +213,23 @@ label = %percentage:2%%
 [network-base]
 type = internal/network
 interval = 5
+
 format-connected = <label-connected>
+format-connected-prefix = ""
+format-connected-prefix-foreground = ${colors.cyan}
+
 format-disconnected = <label-disconnected>
-label-disconnected = %{A1:networkmanager_dmenu:} %{F#F0C674}%ifname%%{F#707880} disconnected %{A}
-# label-disconnected = %{F#F0C674}%ifname%%{F#707880} disconnected
+format-disconnected-prefix = ""
+format-disconnected-prefix-foreground = ${colors.red}
+
+label-disconnected = %{A1:networkmanager_dmenu:} N/a %{A}
+label-disconnected-foreground = ${colors.disabled}
 
 [module/wlan]
 inherit = network-base
 interface-type = wireless
-label-connected = %{A1:networkmanager_dmenu:} %{F#F0C674}%ifname%%{F-} %essid% %{A}
-# label-connected = %{F#F0C674}%ifname%%{F-} %essid%
-# label-connected = %{F#F0C674}%ifname%%{F-} %essid% %local_ip%
+label-connected = %{A1:networkmanager_dmenu:} %essid% %{A}
+# label-connected = %{A1:networkmanager_dmenu:} %{F#F0C674}%ifname%%{F-} %essid% %{A}
 
 [module/eth]
 inherit = network-base
@@ -234,7 +243,8 @@ interval = 1
 format-prefix = " "
 format-prefix-foreground = ${colors.primary}
 date = %H:%M
-date-alt = %d-%m-%Y %H:%M:%S
+date-alt = %d-%m-%Y
+# date-alt = %d-%m-%Y %H:%M:%S
 
 label = %date%
 label-foreground = ${colors.foreground}
@@ -271,6 +281,42 @@ exec = ~/.config/polybar/scripts/update-mgr.sh
 format-prefix = " "
 format-prefix-foreground = ${colors.green}
 interval = 600
+
+
+[module/spotify]
+type = custom/script
+tail = true
+; prefix symbol is shown before the text
+format-prefix = " "
+format-prefix-foreground = ${colors.green}
+format = <label>
+format-underline = #55aa55
+exec = ~/.config/polybar/scripts/scroll_spotify_status.sh
+
+[module/spotify-prev]
+type = custom/script
+exec = echo ""
+format = <label>
+# format-underline = #55aa55
+click-left = playerctl previous spotify
+
+[module/spotify-play-pause]
+type = custom/ipc
+hook-0 = echo ""
+hook-1 = echo ""
+initial = 1
+# format-underline = #55aa55
+click-left = playerctl play-pause spotify
+
+[module/spotify-next]
+type = custom/script
+exec = echo ""
+format = <label>
+# format-underline = #55aa55
+click-left = playerctl next spotify
+
+
+
 
 [settings]
 screenchange-reload = true

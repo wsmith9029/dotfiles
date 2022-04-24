@@ -6,6 +6,7 @@ set expandtab
 set smartindent
 set number
 set relativenumber
+set noshowmode
 
 set mouse=a
 set scrolloff=2
