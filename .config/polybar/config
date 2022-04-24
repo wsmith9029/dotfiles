@@ -21,8 +21,10 @@
 ;background = #221C35
 background = #2a0134
 background-alt = #373B41
-foreground = #C5C8C6
-primary = #F0C674
+;foreground = #C5C8C6
+foreground = ${colors.cyan}
+; primary = #F0C674
+primary = ${colors.yellow}
 secondary = #8ABEB7
 alert = #A54242
 disabled = #707880
@@ -63,7 +65,7 @@ padding-right = 1
 
 module-margin = 1
 
-# separator = |
+separator = |
 separator-foreground = ${colors.green}
 
 font-0 = monospace:size=12;2
@@ -71,8 +73,7 @@ font-1 = Font Awesome 6 Free:style=solid:pixelsize=14;3
 font-2 = Font Awesome 6 Brands:style=solid:pixelsize=14;3
 font-3 = JetBrainMono Nerd Font;2
 
-modules-left = i3
-#xwindow
+modules-left = i3 xwindow
 # modules-center = spotify-scroll spotify-prev spotify-play-pause spotify-next
 modules-center = spotify
 modules-right = pulseaudio filesystem memory cpu battery update-mgr wlan date
@@ -148,7 +149,7 @@ label-urgent-padding = 1
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:50:...%
+label = %title:0:40:...%
 
 [module/filesystem]
 type = internal/fs
@@ -217,7 +218,7 @@ interval = 5
 
 format-connected = <label-connected>
 format-connected-prefix = ""
-format-connected-prefix-foreground = ${colors.cyan}
+format-connected-prefix-foreground = ${colors.primary}
 
 format-disconnected = <label-disconnected>
 format-disconnected-prefix = ""
@@ -257,12 +258,12 @@ battery = BAT1
 adapter = ACAD
 full-at = 98
 
-format-charging-prefix = " "
+format-charging-prefix = " "
 format-charging-prefix-foreground = ${colors.primary}
 format-charging = <label-charging>
 ;format-charging-underline = #ffb52a
 
-format-discharging-prefix = " "
+format-discharging-prefix = " "
 format-discharging-prefix-foreground = ${colors.primary}
 format-discharging =<label-discharging>
 ;format-discharging-underline = ${self.format-charging-underline}
