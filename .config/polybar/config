@@ -73,7 +73,7 @@ font-3 = JetBrainMono Nerd Font;2
 
 modules-left = i3
 #xwindow
-modules-center = spotify spotify-prev spotify-play-pause spotify-next
+# modules-center = spotify spotify-prev spotify-play-pause spotify-next
 modules-right = pulseaudio filesystem memory cpu battery update-mgr wlan date
 #xkeyboard
 cursor-click = pointer

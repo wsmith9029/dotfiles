@@ -87,7 +87,7 @@ rofi
 siji-git
 spicetify-cli
 spotify
-spotify-tui-bin
+spotify-tui
 spotifyd
 sudo
 sxiv
