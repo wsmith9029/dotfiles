@@ -73,7 +73,8 @@ font-3 = JetBrainMono Nerd Font;2
 
 modules-left = i3
 #xwindow
-# modules-center = spotify spotify-prev spotify-play-pause spotify-next
+# modules-center = spotify-scroll spotify-prev spotify-play-pause spotify-next
+modules-center = spotify
 modules-right = pulseaudio filesystem memory cpu battery update-mgr wlan date
 #xkeyboard
 cursor-click = pointer
@@ -283,7 +284,7 @@ format-prefix-foreground = ${colors.green}
 interval = 600
 
 
-[module/spotify]
+[module/spotify-scroll]
 type = custom/script
 tail = true
 ; prefix symbol is shown before the text
@@ -315,7 +316,17 @@ format = <label>
 # format-underline = #55aa55
 click-left = playerctl next spotify
 
-
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = " "
+format = <label>
+exec = python ~/.config/polybar/scripts/spotify_status.py -f '{artist}: {song}'
+format-underline = #1db954
+;control players (optional)
+click-left = playerctl --player=spotify play-pause
+click-right = playerctl --player=spotify next
+click-middle = playerctl --player=spotify previous
 
 
 [settings]
