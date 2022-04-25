@@ -73,9 +73,9 @@ font-1 = Font Awesome 6 Free:style=solid:pixelsize=14;3
 font-2 = Font Awesome 6 Brands:style=solid:pixelsize=14;3
 font-3 = JetBrainMono Nerd Font;2
 
-modules-left = i3 xwindow
+modules-left = i3
 # modules-center = spotify-scroll spotify-prev spotify-play-pause spotify-next
-modules-center = spotify
+modules-center = mpd
 modules-right = pulseaudio filesystem memory cpu battery update-mgr wlan date
 #xkeyboard
 cursor-click = pointer
@@ -333,6 +333,34 @@ format-underline = #1db954
 click-left = playerctl --player=spotify play-pause
 click-right = playerctl --player=spotify next
 click-middle = playerctl --player=spotify previous
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+password =
+interval = 1
+format-online = <icon-prev> <toggle> <icon-next>  <icon-repeat> <icon-random> <label-song>
+#format-online = <icon-prev> <toggle> <icon-next>  <icon-repeat> <icon-random>  <bar-progress> <label-time>  <label-song>
+
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-random = 
+icon-repeat = 
+icon-repeatone = 
+icon-single = 
+icon-consume = ✀
+
+toggle-on-foreground = #ffffff
+toggle-off-foreground = #555555
+
+bar-progress-width = 20
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
 
 
 [settings]

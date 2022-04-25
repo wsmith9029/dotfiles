@@ -28,6 +28,7 @@ alias lock='betterlockscreen -l dim'
 alias tui='~/.config/spotify-tui/launch.sh'
 alias open='xdg-open '
 alias cl='clear'
+alias ncm='ncmpcpp -q'
 PS1='\u@ \W\ > '
 # exec fish
 

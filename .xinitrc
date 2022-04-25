@@ -51,5 +51,6 @@ fi
 setxkbmap gb # Keymap
 nitrogen --restore &
 dunst &
+mopidy &
 
 exec i3 # Window Manager

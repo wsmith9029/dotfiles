@@ -207,6 +207,7 @@ bindsym $mod+r mode "resize"
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf &
 
+
 for_window [class="^.*"] border pixel 0
 gaps inner 15
 gaps outer 10

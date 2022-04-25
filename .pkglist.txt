@@ -47,13 +47,16 @@ lib32-vulkan-intel
 libreoffice-fresh
 linux
 linux-firmware
-lutris
 m4
 make
+mopidy
+mopidy-mpd
+mopidy-spotify
 mpd
 mtools
 nano
 ncdu
+ncmpcpp
 neovim
 network-manager-applet
 networkmanager
@@ -87,7 +90,6 @@ rofi
 siji-git
 spicetify-cli
 spotify
-spotify-tui
 spotifyd
 sudo
 sxiv
@@ -113,9 +115,6 @@ vim
 vlc
 vulkan-intel
 which
-wine
-wine-gecko
-wine-mono
 xclip
 xdg-utils
 xf86-input-synaptics
