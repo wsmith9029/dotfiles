@@ -204,6 +204,7 @@ bindsym $mod+r mode "resize"
 #bar {
 #        status_command i3status
 #}
+exec_always --no-startup-id $HOME/.config/mopidy/launch_mopidy.sh
 exec_always --no-startup-id $HOME/.config/polybar/scripts/launch.sh
 exec_always --no-startup-id picom --config $HOME/.config/picom/picom.conf &
 
