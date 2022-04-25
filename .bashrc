@@ -29,6 +29,7 @@ alias tui='~/.config/spotify-tui/launch.sh'
 alias open='xdg-open '
 alias cl='clear'
 alias ncm='ncmpcpp -q'
+alias upg='yay -Syyu'
 PS1='\u@ \W\ > '
 # exec fish
 
