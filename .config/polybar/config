@@ -1,7 +1,7 @@
 include-file = $HOME/.config/polybar/colours
 include-file = $HOME/.config/polybar/modules
 
-[bar/example]
+[bar/mybar]
 width = 96%
 height = 26pt
 radius = 10
