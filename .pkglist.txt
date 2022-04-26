@@ -107,6 +107,7 @@ ttf-jetbrains-mono
 ttf-material-design-icons
 tty-clock
 udisks2
+ueberzug
 unrar
 unzip
 upower
