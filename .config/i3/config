@@ -48,7 +48,7 @@ bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
-bindsym F9 exec --no-startup-id betterlockscreen -l dimblur
+bindsym F9 exec --no-startup-id betterlockscreen -l dimpixel
 bindsym Print exec --no-startup-id flameshot gui
 
 #dunst
