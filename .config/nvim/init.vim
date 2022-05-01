@@ -52,7 +52,6 @@ if (has("syntax"))
   syntax on
 endif
 
-let g:palenight_terminal_italics=1
 let g:airline_powerline_fonts = 1
 let g:coc_global_extensions = ['coc-clangd', 'coc-css', 'coc-git', 'coc-html', 'coc-htmldjango', 'coc-java', 'coc-json', 'coc-omnisharp', 'coc-pyright', 'coc-sh', 'coc-snippets', 'coc-sql', 'coc-tsserver', 'coc-xml', 'coc-yaml']
 
