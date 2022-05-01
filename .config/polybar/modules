@@ -79,14 +79,19 @@ type = internal/pulseaudio
 #format-volume-underline = ${colors.red}
 #format-muted-underline = ${colors.red}
 
-format-volume-prefix = " "
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+ramp-volume-foreground = ${colors.primary}
+#format-volume-prefix = " "
 format-volume-prefix-foreground = ${colors.primary}
-format-volume = <label-volume>
+format-volume = <ramp-volume> <label-volume>
 
 label-volume = %percentage%%
 
-label-muted = MUTED
-label-muted-foreground = ${colors.alert}
+label-muted =  Muted
+label-muted-foreground = ${colors.red}
 
 click-right = pavucontrol
 
