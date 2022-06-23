@@ -19,7 +19,7 @@ alias fm='vifm ~/'
 # git alias
 alias backup='/usr/bin/git --git-dir=$HOME/dotfiles --work-tree=$HOME'
 alias pacup='sh .getpkglist'
-alias status='backup status'
+alias dstatus='backup status'
 alias addmod='backup add -u'
 alias commit='backup commit --allow-empty-message -m '
 alias push='backup push'
