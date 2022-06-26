@@ -17,9 +17,11 @@ brightnessctl
 calc
 cava
 clang
+code
 cozette-ttf
 discord_arch_electron
 dmenu
+dotnet-sdk
 dunst
 efibootmgr
 fakeroot
@@ -65,7 +67,6 @@ nitrogen
 noto-fonts-cjk
 noto-fonts-emoji
 npm
-octave
 os-prober
 pacman-contrib
 pamixer
