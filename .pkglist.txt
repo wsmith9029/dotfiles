@@ -87,7 +87,6 @@ python-pip
 qbittorrent
 rofi
 siji-git
-spicetify-cli
 spotify
 spotifyd
 sudo
