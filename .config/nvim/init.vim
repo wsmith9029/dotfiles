@@ -1,5 +1,3 @@
-source $HOME/.config/nvim/plug-config/coc.vim
-
 set tabstop=4 softtabstop=4
 set shiftwidth=4
 set expandtab
@@ -23,7 +21,6 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/syntastic'
 Plug 'jiangmiao/auto-pairs'
 Plug 'Yggdroot/indentLine'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'bling/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'haishanh/night-owl.vim'
@@ -53,7 +50,6 @@ if (has("syntax"))
 endif
 
 let g:airline_powerline_fonts = 1
-let g:coc_global_extensions = ['coc-clangd', 'coc-css', 'coc-git', 'coc-html', 'coc-htmldjango', 'coc-java', 'coc-json', 'coc-omnisharp', 'coc-pyright', 'coc-sh', 'coc-snippets', 'coc-sql', 'coc-tsserver', 'coc-xml', 'coc-yaml']
 
 map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
