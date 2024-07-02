@@ -1,0 +1,30 @@
+#!/bin/bash
+. ~/.config/hypr/hypr_utils.conf
+
+restart_waybar() {
+    
+    if pgrep -x "waybar" >/dev/null; then
+      killall -SIGUSR2 waybar
+    else
+      waybar
+    fi
+}
+
+set_current_background() {
+    cp $SET_BG /usr/share/sddm/themes/sdt/wallpaper.jpg 
+    swww img "$SET_BG"
+}
+
+switch_keyboard() {
+    hyprctl switchxkblayout $SET_KB next
+}
+
+if [[ "$1" == "setbg" ]]; then
+    set_current_background
+elif [[ "$1" == "runbar" ]]; then
+    restart_waybar
+elif [[ "$1" == "swkb" ]]; then
+    switch_keyboard
+    restart_waybar
+fi
+
