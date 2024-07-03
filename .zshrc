@@ -77,9 +77,12 @@ ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
-
 # User configuration
+HISTFILE=~/.cache/zsh/history
+HISTSIZE=10000
+SAVEHIST=50000
 
+setopt inc_append_history
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
