@@ -12,7 +12,7 @@ restart_waybar() {
 
 set_current_background() {
     cp $SET_BG /usr/share/sddm/themes/sdt/wallpaper.jpg 
-    swww img "$SET_BG"
+    swww img --transition-step 5 "$SET_BG"
 }
 
 switch_keyboard() {

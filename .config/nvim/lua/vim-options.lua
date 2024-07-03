@@ -13,7 +13,7 @@ vim.opt.cursorline = true
 vim.opt.title = true
 
 
-vim.keymap.set({'n','i'}, "<Up>", "<NOP>", {})
-vim.keymap.set({'n','i'}, "<Down>", "<NOP>", {})
-vim.keymap.set({'n','i'}, "<Left>", "<NOP>", {})
-vim.keymap.set({'n','i'}, "<Right>", "<NOP>", {})
+vim.keymap.set('n', "<Up>", "<NOP>", {})
+vim.keymap.set('n', "<Down>", "<NOP>", {})
+vim.keymap.set('n', "<Left>", "<NOP>", {})
+vim.keymap.set('n', "<Right>", "<NOP>", {})
