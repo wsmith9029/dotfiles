@@ -77,6 +77,7 @@ ZSH_THEME="robbyrussell"
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.cargo/env
 # User configuration
 HISTFILE=~/.cache/zsh/history
 HISTSIZE=10000
