@@ -27,3 +27,5 @@ eval "$(starship init zsh)"
 alias cls='clear'
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
+export PATH="$HOME/.local/bin:$PATH"
+
