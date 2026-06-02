@@ -29,4 +29,11 @@ vim.lsp.config("lua_ls", {
     }
 })
 
-vim.lsp.enable({ 'clangd', 'lua_ls', 'pyright', 'jsonls', 'cssls'})
+vim.lsp.config("qml-language-server", {
+    cmd = { "qml-language-server" },
+    filetypes = { "qml" },
+    root_markers = { { "qmldir", "shell.qml" }, ".git" },
+})
+
+
+vim.lsp.enable({ 'clangd', 'lua_ls', 'pyright', 'jsonls', 'cssls', 'qml-language-server' })
