@@ -1,144 +1,76 @@
-* {
-    border: none;
-    border-radius: 0;
-    font-family: "JetBrainsMono Nerd Font";
-    font-weight: bold;
-    font-size: 16px;
-    min-height: 0;
+@import "colors.css"; /* TODO: Remove this in favour of pywal colors */
+@import url("/home/will/.cache/wal/colors-waybar.css");
+
+#waybar {
+    font-family: 'Rubik', 'JetBrainsMono Nerd Font Propo', 'Noto Sans CJK JP', 'Noto Sans CJK KR';
+    background-color: transparent;
 }
 
-window#waybar {
-    background: rgba(21, 18, 27, 0);
-    color: #cdd6f4;
-}
 
-window#waybar.empty #window {  
- background:none;  
-}
-
-tooltip {
-    background: #1e1e2e;
-    opacity: 0.8;
-    border-radius: 10px;
-    border-width: 2px;
+/* --- PILL STYLE --- */
+/* Defines the standard styling for pill layout. */
+/* Add any modules/groups here */
+#clock,
+#workspaces,
+#window,
+#tray,
+#hardware {
+    background-color: @background;
+    color: @foreground;
+    padding: 2px 15px;
+    border-radius: 99px;
+    margin: 0px 6px;
+    border-width: 1px;
     border-style: solid;
-    border-color: #11111b;
+    border-color: alpha(@foreground, 0.4);
 }
 
-tooltip label{
-    color: #cdd6f4;
+/* --- SPECIFIC MODULE TWEAKS BELOW --- */
+#clock {
+    font-weight: 500;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    opacity: 0; 
+}
+
+#tray {
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1)
 }
 
 #workspaces {
-  font-family: "Noto Sans Mono CJK"; 
+    padding: 2px 8px;
 }
 
 #workspaces button {
-    padding: 5px;
-    color: #313244;
-    margin-right: 5px;
+    padding: 2px 4px;
+    border-radius: 99px;
+    margin: 0px 2px;
+    min-width: 1rem;
+    background-clip: padding-box;
+    transition: all 0.3s ease-in-out;
+    color: @foreground;
+}
+
+#workspaces button.empty {
+    color: @color8
 }
 
 #workspaces button.active {
-    color: #a6adc8;
+    color: @background;
+    background: linear-gradient(135deg, @color1, @color2, @color3, @color4);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-clip: padding-box;
+    min-width: 4rem;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
 }
 
-#workspaces button.focused {
-    color: #a6adc8;
-    background: #eba0ac;
-    border-radius: 10px;
-}
-
-#workspaces button.urgent {
-    color: #11111b;
-    background: #a6e3a1;
-    border-radius: 10px;
-}
-
-#workspaces button:hover {
-    background: #11111b;
-    color: #cdd6f4;
-    border-radius: 10px;
-}
-
-#custom-launch_wofi,
-#custom-lock_screen,
-#custom-light_dark,
-#custom-power_btn,
-#custom-power_profile,
-#custom-weather,
-#custom-myhyprv,
-#window,
-#cpu,
-#disk,
-#custom-updates,
-#memory,
-#clock,
-#battery,
-#pulseaudio,
-#network,
-#tray,
-#temperature,
-#workspaces,
-#backlight {
-    background: #1e1e2e;
-    opacity: 0.8;
-    padding: 0px 10px;
-    margin: 3px 0px;
-    margin-top: 10px;
-    border: 0px;
-}
-
-#tray, #custom-lock_screen, #temperature, #backlight, #custom-launch_wofi, #cpu {
-    border-radius: 10px 0px 0px 10px;
-}
-
-#custom-light_dark, #custom-power_btn, #workspaces, #pulseaudio.microphone, #battery, #disk {
-    border-radius: 0px 10px 10px 0px;
-    margin-right: 10px;
-}
-
-#temperature.critical {
-    color: #e92d4d;
-}
-
-
-#workspaces {
-    padding-right: 0px;
-    padding-left: 5px;
-}
-
-#custom-power_profile {
-    color: #a6e3a1;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#window {
-    border-radius: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-#custom-launch_wofi {
-    color: #89b4fa;
-    margin-left: 10px;
-    border-right: 0px;
-}
-
-#pulseaudio {
-    color: #89b4fa;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#pulseaudio.microphone {
-    color: #cba6f7;
-    border-left: 0px;
-    border-right: 0px;
-}
-
-#battery {
-    color: #a6e3a1;
-    border-left: 0px;
+#custom-sep {
+    padding: 0px 8px;
+    color: alpha(@foreground, 0.2)
 }
