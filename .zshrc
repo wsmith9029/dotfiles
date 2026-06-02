@@ -26,3 +26,5 @@ eval "$(starship init zsh)"
 # -- Custom Alias --
 alias cls='clear'
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+
+# This is a test
