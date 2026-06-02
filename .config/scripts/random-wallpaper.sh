@@ -16,7 +16,7 @@ RANDOM_TRANSITION=${TRANSITIONS[$RANDOM % ${#TRANSITIONS[@]}]}
 # 5. Apply the wallpaper using awww
 if [ -n "$RANDOM_WALLPAPER" ]; then
     awww img "$RANDOM_WALLPAPER" --transition-type "$RANDOM_TRANSITION"
-    wal -i "$RANDOM_WALLPAPER"
+    wal -i "$RANDOM_WALLPAPER" -n
 else
     echo "No wallpapers found in $WALLPAPER_DIR"
 fi

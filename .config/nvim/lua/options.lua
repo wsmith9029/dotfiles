@@ -39,6 +39,6 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     end
 })
 
-vim.diagnostic.config({ severity_sort = true })
+vim.diagnostic.config({ severity_sort = true, virtual_text = true })
 
 vim.opt.clipboard = "unnamedplus"

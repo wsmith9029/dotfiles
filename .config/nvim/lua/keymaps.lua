@@ -30,7 +30,9 @@ vim.keymap.set("n", "<leader>X", "<cmd>!chmod +x %<CR>", { desc = "Make file exe
 vim.keymap.set("n", "<leader>re", "<cmd>restart<cr>", { desc = "Restart Neovim (:restart)" })
 
 vim.keymap.set("n", "gl", vim.diagnostic.open_float)
-vim.keymap.set('n', '<leader>ff', vim.lsp.buf.format)
+vim.keymap.set('n', '<leader>ff', function()
+    require("conform").format({ async = true, lsp_fallback = true })
+end)
 
 vim.keymap.set("n", "<leader>u", function()
     vim.cmd.packadd("nvim.undotree")
@@ -38,4 +40,3 @@ vim.keymap.set("n", "<leader>u", function()
 end, { desc = "Toggle built-in undotree" })
 vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
-

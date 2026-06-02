@@ -36,4 +36,4 @@ vim.lsp.config("qml-language-server", {
 })
 
 
-vim.lsp.enable({ 'clangd', 'lua_ls', 'pyright', 'jsonls', 'cssls', 'qml-language-server' })
+vim.lsp.enable({ 'clangd', 'lua_ls', 'basedpyright', 'jsonls', 'cssls', 'qml-language-server' })
