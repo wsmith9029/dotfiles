@@ -99,10 +99,8 @@
         "sort-by-number": true
     },
     "hyprland/window": {
-        "max-length": 30,
-        "rewrite": {
-            "^$": ""
-        }
+        "max-length": 30
+        
     },
     "custom/sep": {
         "format": "|",
