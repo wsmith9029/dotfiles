@@ -26,6 +26,6 @@ eval "$(starship init zsh)"
 # -- Custom Alias --
 alias cls='clear'
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias ldot='lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
 export PATH="$HOME/.local/bin:$PATH"
-
