@@ -1,88 +1,70 @@
-/* ~/.config/wofi/style.css */
-
-/* Define your color and transparency level here (0.0 = clear, 1.0 = solid) */
-@define-color wofi-bg rgba(30, 30, 46, 0.6);
-@define-color wofi-input rgba(49, 50, 68, 0.5);
+@import url(".cache/wal/colors-waybar.css");
 
 #window {
     margin: 0px;
-    /*border: 5px solid #1e1e2e; */
-    background-color: @wofi-bg; /* Using the variable */
+    /* Mixing background with an alpha layer lets you keep your transparency */
+    background-color: alpha(@background, 0.6);
     border-radius: 15px;
 }
 
 #input {
-    padding: 4px;
+    padding: 8px 12px;
     padding-left: 20px;
     border: none;
-    color: #cdd6f4;
+    color: @foreground;
     font-weight: bold;
-    background-color: @wofi-input; /* Using the variable */
+    /* Use an alternate palette color or a slightly different alpha for the box */
+    background-color: alpha(@color0, 0.5);
     outline: none;
     border-radius: 15px;
-    margin: 10px 15px 2px 15px
+    margin: 10px 15px 5px 15px;
 }
 
 #input:focus {
-    border: 0px solid #1e1e2e;
-    margin: 10px 15px 2px 15px
+    border: none;
     outline: none;
 }
 
 #inner-box {
     margin: 5px 15px;
     border: none;
-    color: #cdd6f4;
+    color: @foreground;
     font-weight: bold;
     background-color: transparent;
-    border-radius: 15px;
 }
 
 #outer-box {
     margin: 0px;
     border: none;
-    border-radius: 15px;
     background-color: transparent;
 }
 
 #scroll {
     margin-top: 5px;
-    border: none;
-    border-radius: 15px;
     margin-bottom: 5px;
+    border: none;
 }
 
 #img {
-    margin-right: 10px;
-}
-
-#img:selected {
-    background-color: #89b4fa;
-    border-radius: 15px;
-}
-
-#text:selected {
-    color: #1e1e2e;
-    margin: 0px 0px;
-    border: none;
-    border-radius: 15px;
-    background-color: #89b4fa;
-    outline: none;
+    margin-right: 12px;
 }
 
 #entry {
-    margin: 0px 0px;
+    padding: 6px 12px;
+    margin: 2px 0px;
     border: none;
-    border-radius: 15px;
+    border-radius: 10px;
     background-color: transparent;
 }
 
+/* @color4 is typically a clean blue/accent color in pywal templates */
 #entry:selected {
-    margin: 0px 0px;
-    border: none;
-    border-radius: 15px;
-    background-color: #89b4fa;
+    background-color: @color4;
     outline: none;
 }
 
-
+/* Keeps text legible against the selection bar by switching to the dark background color */
+#text:selected {
+    color: @background;
+    background-color: transparent;
+}

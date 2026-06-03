@@ -1,5 +1,4 @@
-@import "colors.css"; /* TODO: Remove this in favour of pywal colors */
-@import url("/home/will/.cache/wal/colors-waybar.css");
+@import url("../../.cache/wal/colors-waybar.css");
 
 #waybar {
     font-family: 'Rubik', 'JetBrainsMono Nerd Font Propo', 'Noto Sans CJK JP', 'Noto Sans CJK KR';
@@ -35,7 +34,7 @@ window#waybar.empty #window {
     border: none;
     padding: 0;
     margin: 0;
-    opacity: 0; 
+    opacity: 0;
 }
 
 #tray {
