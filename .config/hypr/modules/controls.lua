@@ -31,8 +31,10 @@ hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("cliphist list | wofi --dmenu -p `Sea
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("wallpicker"))
 hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("sh ~/.config/scripts/random-wallpaper.sh"))
 
--- Print-screen
-hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -m active"))
+-- Screen Capture --
+hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -m active --clipboard-only"))
+hl.bind("SHIFT + PRINT", hl.dsp.exec_cmd("hyprshot -m output -m active"))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("hyprshot -m region -z --clipboard-only"))
 hl.bind(mainMod .. " + SHIFT + S", hl.dsp.exec_cmd("hyprshot -m region -z"))
 
 -- Restart Waybar
