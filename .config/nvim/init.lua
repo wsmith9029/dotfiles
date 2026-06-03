@@ -19,3 +19,13 @@ require("conform").setup({
         python = { "black" }
     }
 })
+
+require('gitsigns').setup({
+    -- Inform gitsigns about bare repository
+    worktrees = {
+        {
+            toplevel = vim.env.HOME,
+            gitdir = vim.env.HOME .. '/.dotfiles'
+        }
+    }
+})
