@@ -1,7 +1,7 @@
 hl.layer_rule({
     match = { namespace = "waybar" },
     blur = true,
-    ignore_alpha = 0
+    ignore_alpha = 0.0
 })
 
 
@@ -24,9 +24,7 @@ hl.layer_rule({
 
 hl.layer_rule({
     name = "wofi-blur", -- Optional identifier
-    match = {
-        namespace = "wofi",
-    },
+    match = { namespace = "wofi" },
     blur = true,
-    ignore_alpha = 0.01, -- Replaces 'ignorezero' by specifying transparency threshold
+    ignore_alpha = 0.0, -- Replaces 'ignorezero' by specifying transparency threshold
 })

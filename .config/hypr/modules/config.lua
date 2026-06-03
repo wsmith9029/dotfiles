@@ -1,24 +1,24 @@
+-- General --
 hl.config({
     general = {
         gaps_in          = 5,
         gaps_out         = 20,
-
         border_size      = 2,
-
         col              = {
-            active_border   = { colors = { "rgba(33ccffee)", "rgba(00ff99ee)" }, angle = 45 },
+            active_border   = {
+                colors = { "rgba(33ccffee)", "rgba(00ff99ee)" },
+                angle = 45
+            },
             inactive_border = "rgba(595959aa)",
         },
-
-        -- Set to true to enable resizing windows by clicking and dragging on borders and gaps
         resize_on_border = false,
-
-        -- Please see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Tearing/ before you turn this on
         allow_tearing    = false,
-
         layout           = "dwindle",
     },
+})
 
+-- Decoration --
+hl.config({
     decoration = {
         rounding         = 10,
         rounding_power   = 2,
@@ -49,53 +49,44 @@ hl.config({
 })
 
 
-
+-- Dwindle --
 hl.config({
     dwindle = {
         preserve_split = true, -- You probably want this
     },
 })
 
--- See https://wiki.hypr.land/Configuring/Layouts/Master-Layout/ for more
+-- Master Layout --
 hl.config({
     master = {
         new_status = "master",
     },
 })
 
--- See https://wiki.hypr.land/Configuring/Layouts/Scrolling-Layout/ for more
+-- Scrolling --
 hl.config({
     scrolling = {
         fullscreen_on_one_column = true,
     },
 })
 
+-- Miscellaneous --
 hl.config({
     misc = {
-        focus_on_activate = true
+        focus_on_activate       = true,
+        force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
+        disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
     }
 })
 
-----------------
-----  MISC  ----
-----------------
-
-hl.config({
-    misc = {
-        force_default_wallpaper = 0,    -- Set to 0 or 1 to disable the anime mascot wallpapers
-        disable_hyprland_logo   = true, -- If true disables the random hyprland logo / anime girl background. :(
-    },
-})
-
+-- XWayland --
 hl.config({
     xwayland = {
         force_zero_scaling = true
     }
 })
----------------
----- INPUT ----
----------------
 
+-- Input --
 hl.config({
     input = {
         kb_layout    = "gb",
