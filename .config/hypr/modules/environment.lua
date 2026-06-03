@@ -1,0 +1,5 @@
+hl.env("XCURSOR_SIZE", "24")
+hl.env("HYPRCURSOR_SIZE", "24")
+
+hl.env("AWWW_TRANSITION_FPS", "144")
+hl.env("AWWW_TRANSITION_STEP", "90")
