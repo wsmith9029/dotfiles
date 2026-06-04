@@ -27,5 +27,7 @@ eval "$(starship init zsh)"
 alias cls='clear'
 alias dotfiles='git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias ldot='lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias f='fzf --preview="bat --color=always --style=numbers {}" | xargs -r nvim'
+alias scd='cd "$(fzf --preview="if [ -d {} ]; then ls -la {}; else bat --color=always --style=numbers {}; fi" | xargs -r dirname)"'
 
 export PATH="$HOME/.local/bin:$PATH"
