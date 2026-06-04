@@ -31,3 +31,9 @@ alias f='fzf --preview="bat --color=always --style=numbers {}" | xargs -r nvim'
 alias scd='cd "$(fzf --preview="if [ -d {} ]; then ls -la {}; else bat --color=always --style=numbers {}; fi" | xargs -r dirname)"'
 
 export PATH="$HOME/.local/bin:$PATH"
+
+# Delete a specific session by its name
+alias tkill="tmux kill-session -t"
+
+# Delete everything globally (doesn't need -t because it kills the whole server)
+alias tkillall="tmux kill-server"
