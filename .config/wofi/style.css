@@ -3,7 +3,7 @@
 #window {
     margin: 0px;
     /* Mixing background with an alpha layer lets you keep your transparency */
-    background-color: alpha(@background, 0.6);
+    background-color: alpha(@background, 0.8);
     border-radius: 15px;
 }
 
