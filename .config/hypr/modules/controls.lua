@@ -29,7 +29,7 @@ hl.bind(mainMod .. " + C", hl.dsp.exec_cmd("cliphist list | wofi --dmenu -p `Sea
 
 -- Wallpaper Menu
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd("wallpicker"))
-hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("sh ~/.config/scripts/random-wallpaper.sh"))
+hl.bind(mainMod .. " + SHIFT + W", hl.dsp.exec_cmd("sh ~/.config/scripts/change-wallpaper.sh"))
 
 -- Screen Capture --
 hl.bind("PRINT", hl.dsp.exec_cmd("hyprshot -m output -m active --clipboard-only"))

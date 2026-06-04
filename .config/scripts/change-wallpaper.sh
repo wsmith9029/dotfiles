@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 1. Define your wallpaper directory
-WALLPAPER_DIR="/home/will/Wallpapers"
+WALLPAPER_DIR="$HOME/Wallpapers"
 
 
 # 2. Find a random image from the folder
