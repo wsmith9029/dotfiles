@@ -29,3 +29,5 @@ require('gitsigns').setup({
         }
     }
 })
+
+require("fzf-lua").setup({})

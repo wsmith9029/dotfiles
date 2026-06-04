@@ -30,7 +30,7 @@ vim.keymap.set("n", "<leader>X", "<cmd>!chmod +x %<CR>", { desc = "Make file exe
 vim.keymap.set("n", "<leader>re", "<cmd>restart<cr>", { desc = "Restart Neovim (:restart)" })
 
 vim.keymap.set("n", "gl", vim.diagnostic.open_float)
-vim.keymap.set('n', '<leader>ff', function()
+vim.keymap.set('n', 'ff', function()
     require("conform").format({ async = true, lsp_fallback = true })
 end)
 
@@ -42,3 +42,18 @@ vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = 
 vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
 
 vim.keymap.set("n", "GB", ":Gitsigns toggle_current_line_blame<CR>")
+
+
+-- Fuzzy Search --
+vim.keymap.set("n", "<leader>ff", function()
+    require("fzf-lua").files()
+end)
+vim.keymap.set("n", "<leader>fg", function()
+    require("fzf-lua").live_grep()
+end)
+vim.keymap.set("n", "<leader>fb", function()
+    require("fzf-lua").buffers()
+end)
+vim.keymap.set("n", "<leader>fh", function()
+    require("fzf-lua").help_tags()
+end)

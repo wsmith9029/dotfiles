@@ -5,5 +5,7 @@ vim.pack.add({
     "https://github.com/romus204/tree-sitter-manager.nvim",
     "https://github.com/mason-org/mason.nvim",
     "https://github.com/stevearc/conform.nvim",
-    "https://github.com/lewis6991/gitsigns.nvim"
+    "https://github.com/lewis6991/gitsigns.nvim",
+    "https://github.com/nvim-tree/nvim-web-devicons",
+    "https://github.com/ibhagwan/fzf-lua"
 })
