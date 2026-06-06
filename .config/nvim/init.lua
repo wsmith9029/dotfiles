@@ -37,3 +37,12 @@ require("fzf-lua").setup({
     }
 })
 require("lualine").setup({})
+require("mini.notify").setup({
+    window = {
+        max_width_share = 0.4,
+
+        config = {
+            border = 'rounded'
+        }
+    }
+})

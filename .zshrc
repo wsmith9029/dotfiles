@@ -30,7 +30,7 @@ alias ldot='lazygit --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias f='fzf --preview="bat --color=always --style=numbers {}" | xargs -r nvim'
 alias scd='cd "$(fzf --preview="if [ -d {} ]; then ls -la {}; else bat --color=always --style=numbers {}; fi" | xargs -r dirname)"'
 alias zel='zellij'
-
+alias rain='terminal-rain -t'
 
 # -- PATH --
 export PATH="$HOME/.local/bin:$PATH"
