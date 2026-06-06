@@ -36,7 +36,11 @@ require("fzf-lua").setup({
         hidden    = false
     }
 })
-require("lualine").setup({})
+require("lualine").setup({
+    options = {
+        theme = 'palenight'
+    }
+})
 require("mini.notify").setup({
     window = {
         max_width_share = 0.4,
