@@ -30,5 +30,10 @@ require('gitsigns').setup({
     }
 })
 
-require("fzf-lua").setup({})
+require("fzf-lua").setup({
+    files = {
+        previewer = "bat",
+        hidden    = false
+    }
+})
 require("lualine").setup({})
