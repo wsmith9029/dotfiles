@@ -41,7 +41,9 @@ end, { desc = "Toggle built-in undotree" })
 vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<CR>", { noremap = true, silent = true })
 
-vim.keymap.set("n", "GB", ":Gitsigns toggle_current_line_blame<CR>")
+vim.keymap.set("n", "gb", ":Gitsigns toggle_current_line_blame<CR>")
+vim.keymap.set("n", "gp", ":Gitsigns preview_hunk<CR>")
+
 
 
 -- Fuzzy Search --
