@@ -3,20 +3,45 @@
 # Give the media player a split-second to synchronize metadata
 sleep 0.5
 
-# 1. Fetch current status and metadata safely
+# 1. Fetch current status and player name safely
 STATUS=$(playerctl status 2>/dev/null)
+PLAYER=$(playerctl metadata --format "{{ playerName }}" 2>/dev/null)
+
+# Exit immediately if no player is active or music is paused
+if [ "$STATUS" != "Playing" ] || [ -z "$PLAYER" ]; then
+    exit 0
+fi
+
+# =====================================================================
+# BROWSER BLOCKLIST
+# =====================================================================
+# Declare a list of apps to ignore completely
+declare -A BLOCKED_PLAYERS=(
+    ["firefox"]=1
+    ["chromium"]=1
+    ["chrome"]=1
+    ["brave"]=1
+    ["vivaldi"]=1
+)
+
+# If the current player exists in our map, exit immediately
+if [[ ${BLOCKED_PLAYERS[$PLAYER]} ]]; then
+    exit 0
+fi
+# =====================================================================
+
+# 2. Fetch track metadata now that we know it's a dedicated player
 TITLE=$(playerctl metadata title 2>/dev/null)
 ARTIST=$(playerctl metadata artist 2>/dev/null)
 
-# Exit immediately if no player is active or music is paused
-if [ "$STATUS" != "Playing" ] || [ -z "$TITLE" ]; then
+if [ -z "$TITLE" ]; then
     exit 0
 fi
 
 # Fallback string if artist metadata is blank
 [ -z "$ARTIST" ] && ARTIST="Unknown Artist"
 
-# 2. Extract album art location pointer
+# 3. Extract album art location pointer
 RAW_ART=$(playerctl metadata mpris:artUrl 2>/dev/null)
 TARGET_ART=""
 
@@ -27,13 +52,13 @@ mkdir -p "$TMP_DIR"
 # Housekeeping: Clear downloaded art files older than 4 hours to keep /tmp tiny
 find "$TMP_DIR" -type f -mmin +240 -delete 2>/dev/null
 
-# 3. Process Art Location: Local File vs. Remote URL
+# 4. Process Art Location: Local File vs. Remote URL
 if [ -n "$RAW_ART" ]; then
     if [[ "$RAW_ART" == file://* ]]; then
         # LOCAL: Strip the "file://" prefix, use your existing hard drive path instantly
         TARGET_ART="${RAW_ART#file://}"
     elif [[ "$RAW_ART" == http://* || "$RAW_ART" == https://* ]]; then
-        # STREAMING: Hash the long URL to make a unique, legal Linux filename
+        # STREAMING: Hash the long URL to make a unique filename
         URL_HASH=$(echo -n "$RAW_ART" | md5sum | cut -d' ' -f1)
         FILE_EXT="${RAW_ART##*.}"
         
@@ -51,11 +76,10 @@ if [ -n "$RAW_ART" ]; then
     fi
 fi
 
-# 4. Dispatch the finished notification packet directly to Mako
-# Note: the "music" hint ensures the window updates in-place instead of stacking bubbles
+# 5. Dispatch the finished notification packet directly to Mako
 if [ -n "$TARGET_ART" ] && [ -f "$TARGET_ART" ]; then
     notify-send -a "media-notifier" -i "$TARGET_ART" --hint=string:x-canonical-private-synchronous:music "Now Playing" "$TITLE\n<i>by $ARTIST</i>"
 else
-    # System fallback icon if no artwork was found or provided
+    # Clean system fallback icon if no artwork was found or provided
     notify-send -a "media-notifier" -i audio-x-generic --hint=string:x-canonical-private-synchronous:music "Now Playing" "$TITLE\n<i>by $ARTIST</i>"
 fi
