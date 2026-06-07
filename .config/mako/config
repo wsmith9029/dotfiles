@@ -35,3 +35,4 @@ anchor=bottom-right
 # See .config/scripts/media-notify.sh
 [app-name="media-notifier"]
 max-icon-size=96
+on-button-middle=exec ~/.config/scripts/focus-media-player.sh
