@@ -12,7 +12,7 @@ on-touch=dismiss
 
 # STYLE OPTIONS
 font=Fantasque Sans Mono 11
-width=300
+width=400
 height=100
 outer-margin=8
 padding=15
@@ -31,3 +31,7 @@ max-visible=5
 layer=overlay
 anchor=bottom-right
 
+
+# See .config/scripts/media-notify.sh
+[app-name="media-notifier"]
+max-icon-size=96
