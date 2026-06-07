@@ -4,15 +4,15 @@ max-history=100
 sort=-time
 
 # BINDING OPTIONS
-on-button-left=dismiss
-on-button-middle=none
-on-button-right=dismiss-all
+on-button-left=invoke-default-action
+on-button-middle=dismiss-all
+on-button-right=dismiss
 on-touch=dismiss
 # on-notify=exec mpv /usr/share/sounds/freedesktop/stereo/message.oga
 
 # STYLE OPTIONS
 font=Fantasque Sans Mono 11
-width=400
+width=300
 height=100
 outer-margin=8
 padding=15
@@ -24,7 +24,7 @@ icon-location=left
 markup=1
 actions=1
 history=1
-text-alignment=center
+# text-alignment=center
 default-timeout=5000
 ignore-timeout=0
 max-visible=5
@@ -35,4 +35,3 @@ anchor=bottom-right
 # See .config/scripts/media-notify.sh
 [app-name="media-notifier"]
 max-icon-size=96
-on-button-middle=exec ~/.config/scripts/focus-media-player.sh

@@ -76,10 +76,29 @@ if [ -n "$RAW_ART" ]; then
     fi
 fi
 
-# 5. Dispatch the finished notification packet directly to Mako
+ACTION=""
+# 5. Dispatch the notification and capture the triggered action
+# We define an action named "default" with the label "Focus Player"
 if [ -n "$TARGET_ART" ] && [ -f "$TARGET_ART" ]; then
-    notify-send -a "media-notifier" -i "$TARGET_ART" --hint=string:x-canonical-private-synchronous:music "Now Playing" "$TITLE\n<i>by $ARTIST</i>"
+    ACTION=$(notify-send -a "media-notifier" \
+                         -i "$TARGET_ART" \
+                         --wait \
+                         --action="default=FocusPlayer" \
+                         --hint=string:x-canonical-private-synchronous:music \
+                         "Now Playing" "$TITLE\n<i>by $ARTIST</i>")
 else
-    # Clean system fallback icon if no artwork was found or provided
-    notify-send -a "media-notifier" -i audio-x-generic --hint=string:x-canonical-private-synchronous:music "Now Playing" "$TITLE\n<i>by $ARTIST</i>"
+    ACTION=$(notify-send -a "media-notifier" \
+                         -i audio-x-generic \
+                         --wait \
+                         --action="default=FocusPlayer" \
+                         --hint=string:x-canonical-private-synchronous:music \
+                         "Now Playing" "$TITLE\n<i>by $ARTIST</i>")
+fi
+
+# 6. If the user triggered the default action, handle the window focus right here!
+if [ "$ACTION" == "default" ]; then
+    # We still have the native $PLAYER variable in scope from step 1!
+    if [ -n "$PLAYER" ]; then
+        hyprctl dispatch "hl.dsp.focus({ window = \"class:^(?i)${PLAYER}$\" })"
+    fi
 fi
